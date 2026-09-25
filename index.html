@@ -101,6 +101,11 @@
       .taxonomy-card h3 { margin: 23px 0 8px; color: var(--paper-ink); font-family: Fraunces, serif; font-size: 21px; font-weight: 500; }
       .taxonomy-card p { margin: 0; color: #718078; font-size: 12px; }
       .card-number { color: #779783; font-size: 11px; font-weight: 700; letter-spacing: 0.11em; }
+      .empty-state { max-width: 680px; padding: 36px 0 18px; }
+      .empty-state h3 { margin: 0 0 12px; color: var(--paper-ink); font-family: Fraunces, serif; font-size: 31px; font-weight: 500; }
+      .empty-state p { max-width: 560px; margin: 0; color: #718078; font-size: 14px; line-height: 1.7; }
+      .future-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 24px; }
+      .future-list span { padding: 9px 12px; border: 1px solid #d2ddd4; border-radius: 4px; color: #77907e; font-size: 12px; }
       .stat-row { gap: 12px; margin-top: 28px; color: #718078; font-size: 12px; }
       .stat-row span { width: 4px; height: 4px; border-radius: 50%; background: var(--coral); }
       @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
@@ -123,33 +128,37 @@
         <div class="top-row">
           <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Eluña · private workspace</div>
           <nav class="actions" aria-label="Workspace actions">
-            <a class="action" href="#taxonomy">View library <span aria-hidden="true">↗</span></a>
+            <a class="action" href="#reference-shelf">View shelf <span aria-hidden="true">↗</span></a>
             <a class="logout" href="#">Log out <span aria-hidden="true">→</span></a>
           </nav>
         </div>
         <div class="hero-copy">
-          <h1>Course <em>taxonomy.</em></h1>
-          <p class="intro">A considered home for the ideas, practices, and pathways that shape the Eluña library.</p>
+          <h1>Reference <em>material.</em></h1>
+          <p class="intro">A quiet home for the ideas, sketches, and working materials that will shape what comes next for Eluña.</p>
         </div>
         <div class="status" role="status">
-          <div class="status-copy"><span class="status-dot" aria-hidden="true"></span><strong>Workspace ready</strong><span>·</span><span>12 collections synced</span></div>
+          <div class="status-copy"><span class="status-dot" aria-hidden="true"></span><strong>Workspace ready</strong><span>·</span><span>The shelf is ready for its first pieces</span></div>
         </div>
       </div>
     </header>
-    <main id="taxonomy">
+    <main id="reference-shelf">
       <div class="section-head">
         <div class="section-title">
           <div class="section-icon" aria-hidden="true">✦</div>
-          <div><h2>Explore the library</h2><p>Organized paths through the current collection.</p></div>
+          <div><h2>The reference shelf</h2><p>A place for useful things, gathered as the project takes shape.</p></div>
         </div>
-        <input class="search" type="search" placeholder="Search collections" aria-label="Search collections" />
       </div>
-      <section class="taxonomy-grid" aria-label="Course collections">
-        <article class="taxonomy-card"><div class="card-number">01 / FOUNDATIONS</div><h3>Awareness</h3><p>12 courses · 48 sessions</p></article>
-        <article class="taxonomy-card"><div class="card-number">02 / PRACTICE</div><h3>Embodiment</h3><p>8 courses · 31 sessions</p></article>
-        <article class="taxonomy-card"><div class="card-number">03 / PATHWAYS</div><h3>Transformation</h3><p>6 courses · 24 sessions</p></article>
+      <section class="empty-state" aria-labelledby="empty-title">
+        <h3 id="empty-title">Nothing filed here yet.</h3>
+        <p>This space is intentionally open for now. Future references can live here as they become useful, easy to find, and ready to share.</p>
+        <div class="future-list" aria-label="Planned reference areas">
+          <span>Course taxonomy</span>
+          <span>Wireframes</span>
+          <span>Content notes</span>
+          <span>Design references</span>
+        </div>
       </section>
-      <div class="stat-row"><span aria-hidden="true"></span> Updated today · Private admin view</div>
+      <div class="stat-row"><span aria-hidden="true"></span> Empty by design · Ready to grow</div>
     </main>
   </body>
 </html>
